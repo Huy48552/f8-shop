@@ -1,0 +1,41 @@
+/* Mobile & tablet */ 
+@media (max-width: 1023px) {
+    :root {
+        --header--height: 54px;
+        --navbar-height: 0;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+}
+
+
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__logo {
+        width: 160px;
+    }
+
+    .header__cart {
+        width: 64px;
+        text-align: right;
+    }
+
+    .header__cart-list-item {
+        max-height: 30vh;
+    }
+
+} 
+
+/* Mobile */ 
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}

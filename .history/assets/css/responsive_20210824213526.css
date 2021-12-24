@@ -1,0 +1,73 @@
+/* Mobile & tablet */ 
+@media (max-width: 1023px) {
+    :root {
+        --header--height: 54px;
+        --navbar-height: 0;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .grid__column-10 {
+        margin-top: calc(var(--header--height) + var(--sort-header-height));
+    }
+
+    .sort__header {
+        display: flex;
+    }
+
+}
+
+
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__logo {
+        width: 160px;
+    }
+
+    .header__cart {
+        width: 64px;
+        text-align: right;
+    }
+
+    .header__cart-list-item {
+        max-height: 30vh;
+    }
+
+} 
+
+/* Mobile */ 
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__icon {
+        display: flex;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        text-align: right;
+    }
+
+    .header__logo-img {
+        width: 130px;
+    }
+}
